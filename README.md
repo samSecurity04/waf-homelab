@@ -20,7 +20,7 @@ A complete attack-and-defense lab where I:
 ## 🏗️ Architecture
 
 Kali Linux (Attacker) → https://dvwa.local:443 → SafeLine WAF → DVWA on port 8080
-(filters traffic)
+                                                 (filters traffic)
 
 ## 🛠️ Tech Stack
 
@@ -34,19 +34,22 @@ Kali Linux (Attacker) → https://dvwa.local:443 → SafeLine WAF → DVWA on po
 ## 📸 Highlights
 
 ### Attack → Blocked
+
 | Before WAF | After WAF |
 |------------|-----------|
-| ![SQL Success](screenshots/03-attacks-pre-waf/sql-injection-success.png) | ![SQL Blocked](screenshots/06-waf-in-action/sql-injection-blocked.png) |
+| ![SQL Success](screenshots/03-attacks-pre-waf/sql-injection-success.webp) | ![SQL Blocked](screenshots/06-waf-in-action/sql-injection-blocked.webp) |
 | SQL injection dumps full user database | Same payload blocked at WAF layer |
 
 ### WAF Dashboard & Attack Logs
-![Dashboard](screenshots/05-waf-deployment/safeline-dashboard.png)
-![Attack Logs](screenshots/06-waf-in-action/attack-logs.png)
+
+![Dashboard](screenshots/05-waf-deployment/safeline-dashboard.webp)
+![Attack Logs](screenshots/06-waf-in-action/attack-logs.webp)
 
 ### HTTP Flood Defense
+
 500 requests via `ab` — all blocked by rate limiting.
 
-![HTTP Flood](screenshots/07-advanced-defense/http-flood-blocked.png)
+![HTTP Flood](screenshots/07-advanced-defense/http-flood-blocked.webp)
 
 ---
 
