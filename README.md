@@ -1,5 +1,4 @@
-# 🛡️ Web Application Security Lab — SafeLine WAF on Apple Silicon
-
+# 🛡️ Web Application Security Lab — SafeLine WAF + DVWA on Apple Silicon
 End-to-end home lab demonstrating offensive web attacks and WAF-based defense, built on a MacBook Pro M4 (ARM64).
 
 ![Platform](https://img.shields.io/badge/Platform-Apple%20Silicon-blue)
@@ -30,6 +29,18 @@ Kali Linux (Attacker) → https://dvwa.local:443 → SafeLine WAF → DVWA on po
 - **WAF:** SafeLine WAF v9.3.7 (Pro Edition)
 
 ---
+## 📂 Project Phases
+
+1. Environment & VM Setup
+2. LAMP Stack + DVWA Deployment
+3. Attack Simulation Before WAF
+4. Troubleshooting & Debugging
+5. SafeLine WAF Deployment
+6. WAF Protection Validation
+7. Advanced Defense Configuration
+8. Attack Logs & Monitoring
+Each phase is documented in the `Lab Screenshots/` directory with supporting screenshots and attack validation results.
+---
 
 ## 📸 Highlights
 
@@ -37,19 +48,19 @@ Kali Linux (Attacker) → https://dvwa.local:443 → SafeLine WAF → DVWA on po
 
 | Before WAF | After WAF |
 |------------|-----------|
-| ![SQL Success](screenshots/03-attacks-pre-waf/sql-injection-success.webp) | ![SQL Blocked](screenshots/06-waf-in-action/sql-injection-blocked.webp) |
+| ![SQL Success](Lab%20Screenshots/03-attacks-pre-waf/01-sql-injection-success.webp) | ![SQL Blocked](Lab%20Screenshots/06-waf-in-action/01-sql-injection-blocked.webp) |
 | SQL injection dumps full user database | Same payload blocked at WAF layer |
 
 ### WAF Dashboard & Attack Logs
 
-![Dashboard](screenshots/05-waf-deployment/safeline-dashboard.webp)
-![Attack Logs](screenshots/06-waf-in-action/attack-logs.webp)
+![Dashboard](Lab%20Screenshots/05-waf-deployment/03-waf-dashboard.webp)
+![Attack Logs](Lab%20Screenshots/08-detailed-logs/01-attack-logs.webp)
 
 ### HTTP Flood Defense
 
 500 requests via `ab` — all blocked by rate limiting.
 
-![HTTP Flood](screenshots/07-advanced-defense/http-flood-blocked.webp)
+![HTTP Flood](Lab%20Screenshots/07-advanced-defense/02-load-test-success.webp)
 
 ---
 
@@ -71,7 +82,7 @@ Kali Linux (Attacker) → https://dvwa.local:443 → SafeLine WAF → DVWA on po
 
 - **`README.md`** — This file
 - **`LESSONS-LEARNED.md`** — Detailed troubleshooting writeups
-- **`screenshots/`** — Phase-by-phase visual documentation (28 screenshots)
+- **`Lab Screenshots/`** — Phase-by-phase visual documentation
 
 ---
 
@@ -83,4 +94,6 @@ Kali Linux (Attacker) → https://dvwa.local:443 → SafeLine WAF → DVWA on po
 
 ---
 
-⭐ *Star this repo if you found it useful!*
+## 📌 Note
+
+This project was built for educational and cybersecurity lab purposes only.
