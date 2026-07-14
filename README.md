@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ Web Application Security Lab — SafeLine WAF + DVWA
+# 🛡️ Web Application Security Lab - SafeLine WAF + DVWA
 
 ### *Attack first. Defend second. Prove the difference.*
 
